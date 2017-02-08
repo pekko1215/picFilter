@@ -1,7 +1,9 @@
 import cv2
+import numpy as np
+import matplotlib.pyplot as plt
 
-filename = "test.jpg"
-img = cv2.imread(filename, cv2.IMREAD_GRAYSCALE)
-cv2.imshow('window title', img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# read an image
+img = cv2.imread('test.jpg')
+# show image format (basically a 3-d array of pixel color info, in BGR format)
+plt.imshow(img)
+plt.show()
